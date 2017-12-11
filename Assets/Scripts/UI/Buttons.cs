@@ -37,15 +37,20 @@ public class Buttons : MonoBehaviour {
     {
         animatorSelectPlayer.SetBool("ActiveSelectPlayer", false);
     }
+    public void SelectPlayerPress()
+    {
+        SceneManager.LoadScene(Constants.SceneName.SELECT_LVL);
+    }
 
 
+    //GAME
     public void MenuPress()
     {
         SceneManager.LoadScene(Constants.SceneName.MAIN_MENU);
     }
-
     public void RestartPress()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
 }

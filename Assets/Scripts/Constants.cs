@@ -7,8 +7,8 @@ public sealed class Constants : MonoBehaviour {
     public sealed class SceneName
     {
         public const string MAIN_MENU = "MainMenu";
-        //public const string SELECT_LVL = "SelectLvl";
-        //public const string LVL = "Lvl";
+        public const string SELECT_LVL = "SelectLvl";
+        public const string LVL = "Lvl";
         //public const string CREDITS = "Credits";
     }
 
@@ -39,11 +39,11 @@ public sealed class Constants : MonoBehaviour {
 
     public sealed class LevelSave
     {
-       /* public const int NUMBER_UNLOCK_LEVEL = 1;
+        public const int NUMBER_UNLOCK_LEVEL = 1;
         public const int NUMBER_LOCK_LEVEL = 0;
         public const int INDEX_LEVEL_ONE = 0;
         public const int NUMBER_MAX_LEVELS = 10;
-        public const string TEXT_LEVELS_KEY = "Levels ";*/
+        public const string TEXT_LEVELS_KEY = "Levels ";
     }
 
     public sealed class CameraProperties
