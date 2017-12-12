@@ -42,14 +42,22 @@ public class Buttons : MonoBehaviour {
         SceneManager.LoadScene(Constants.SceneName.SELECT_LVL);
     }
 
-
-    //GAME
-    public void MenuPress()
+    //SELECT LVL
+    public void BackSelectLvlPress()
     {
         SceneManager.LoadScene(Constants.SceneName.MAIN_MENU);
     }
+
+
+    //GAME WIN
+    public void ContinuePress()
+    {
+ 
+        SceneManager.LoadScene(Constants.SceneName.SELECT_LVL);
+    }
     public void RestartPress()
     {
+     
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
