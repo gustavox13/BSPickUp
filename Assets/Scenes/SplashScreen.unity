@@ -137,7 +137,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 64002056}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.000015258789, z: 0}
+  m_LocalPosition: {x: 0, y: 0.20000458, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1912508964}
@@ -206,9 +206,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 323354545}
-  - component: {fileID: 323354547}
   - component: {fileID: 323354546}
   - component: {fileID: 323354548}
+  - component: {fileID: 323354547}
   m_Layer: 0
   m_Name: LevelCntroler
   m_TagString: Untagged
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 323354544}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e05db83467050d42bbcd29e0de143ff, type: 3}
+  m_Script: {fileID: 11500000, guid: d15749a161667894a92fc317d137e35c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &323354548
@@ -557,7 +557,7 @@ RectTransform:
   m_GameObject: {fileID: 1912508960}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.01875, y: 0.01875, z: 0.01875}
+  m_LocalScale: {x: 0.020833334, y: 0.020833334, z: 0.020833334}
   m_Children:
   - {fileID: 1052773367}
   - {fileID: 64002057}

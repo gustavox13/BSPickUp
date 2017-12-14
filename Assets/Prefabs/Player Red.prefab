@@ -61,6 +61,9 @@ GameObject:
   - component: {fileID: 235366254311733432}
   - component: {fileID: 60420181142403688}
   - component: {fileID: 60926301465573098}
+  - component: {fileID: 114136161916015472}
+  - component: {fileID: 114153952304020946}
+  - component: {fileID: 114556494809088612}
   m_Layer: 0
   m_Name: Player Red
   m_TagString: Player
@@ -74,8 +77,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1649236591354638}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.211, y: 3.779, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.29, y: -1.3899999, z: -0.055679034}
   m_LocalScale: {x: 0.3181485, y: 0.3181485, z: 0.3181485}
   m_Children:
   - {fileID: 4566094841163830}
@@ -141,9 +144,9 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 2.5
   m_AngularDrag: 0.05
-  m_GravityScale: 0.8
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -370,6 +373,43 @@ PolygonCollider2D:
       - {x: -1.95391, y: 1.1842884}
       - {x: -3.3265061, y: 1.1712145}
       - {x: -3.5633507, y: 1.0527712}
+--- !u!114 &114136161916015472
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1649236591354638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87d16977df8a5514c8760454ea83464f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114153952304020946
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1649236591354638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06d574106cd71f4bb1ff45e9b00b376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1700
+  backWeel: {fileID: 235366254311733432}
+  frontWeel: {fileID: 235740377755664958}
+  playerRB: {fileID: 50836315879319506}
+--- !u!114 &114556494809088612
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1649236591354638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f1f94af65a2ac74ea24cc52d4e5e0e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212736793158399350
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -447,7 +487,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 500
+  m_SortingOrder: 501
   m_Sprite: {fileID: 21300000, guid: d2b040fc827708b449263e2af5c814ff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

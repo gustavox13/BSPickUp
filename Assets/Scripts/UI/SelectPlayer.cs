@@ -52,12 +52,14 @@ public sealed class SelectPlayer : MonoBehaviour {
     {
         verifySwipe = true;
         Move(90);
+        PlayerSelected.instance.ConvertPlayerTypeToInt(showCase.transform.eulerAngles.y);
     }
 
     private void SwipeRight()
     {
         verifySwipe = true;
         Move(-90);
+        PlayerSelected.instance.ConvertPlayerTypeToInt(showCase.transform.eulerAngles.y);
     }
 
 private void Move(int angRotation)

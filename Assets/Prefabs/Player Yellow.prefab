@@ -43,6 +43,9 @@ GameObject:
   - component: {fileID: 235650598639360004}
   - component: {fileID: 60816151085015106}
   - component: {fileID: 60034550425073868}
+  - component: {fileID: 114348266304155096}
+  - component: {fileID: 114877960673469316}
+  - component: {fileID: 114655633197359154}
   m_Layer: 0
   m_Name: Player Yellow
   m_TagString: Player
@@ -74,8 +77,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1477635534542030}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.211, y: 3.779, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.29, y: -1.39, z: -0.055679034}
   m_LocalScale: {x: 0.3181485, y: 0.3181485, z: 0.3181485}
   m_Children:
   - {fileID: 4734360792289600}
@@ -141,9 +144,9 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 2.5
   m_AngularDrag: 0.05
-  m_GravityScale: 0.8
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -370,6 +373,43 @@ PolygonCollider2D:
       - {x: 4.17, y: -1.5999999}
       - {x: 4.19, y: -1.55}
       - {x: 4.2, y: -1.41}
+--- !u!114 &114348266304155096
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1477635534542030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87d16977df8a5514c8760454ea83464f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114655633197359154
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1477635534542030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f1f94af65a2ac74ea24cc52d4e5e0e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114877960673469316
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1477635534542030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06d574106cd71f4bb1ff45e9b00b376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1700
+  backWeel: {fileID: 235650598639360004}
+  frontWeel: {fileID: 235469432192313036}
+  playerRB: {fileID: 50600527479014630}
 --- !u!212 &212308339924454136
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -447,7 +487,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 500
+  m_SortingOrder: 501
   m_Sprite: {fileID: 21300000, guid: 1b5004e5d7f8d904383f7794502e6c20, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

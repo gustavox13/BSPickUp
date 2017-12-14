@@ -14,10 +14,10 @@ public sealed class Constants : MonoBehaviour {
 
     public sealed class TagName
     {
-       /* public const string FLOOR = "Floor";
+        public const string FLOOR = "Floor";
         public const string PLAYER = "Player";
-        public const string BUTTON_START = "ButtonStart";
-        public const string LOADING = "Loading";*/
+        //public const string BUTTON_START = "ButtonStart";
+        //public const string LOADING = "Loading";
     }
 
     public sealed class ObjectName

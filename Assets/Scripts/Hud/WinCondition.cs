@@ -7,12 +7,12 @@ public class WinCondition : MonoBehaviour {
     [SerializeField]
     private Canvas WinScreen;
     [SerializeField]
-    private string objectTag;
-    [SerializeField]
     private float WinPosition;
     private GameObject objPlayer;
     [SerializeField]
     private Win WinScript;
+    private string objectTag;
+
 
     private void Start () {
         LoadResources();
@@ -20,7 +20,7 @@ public class WinCondition : MonoBehaviour {
 
     private void LoadResources()
     {
-        Time.timeScale = 1.0f;
+        objectTag = Constants.TagName.PLAYER;
         WinScreen.enabled = false;
         objPlayer = GameObject.FindWithTag(objectTag);
     }
@@ -31,7 +31,7 @@ public class WinCondition : MonoBehaviour {
 
     private void Condition()
     {
-        if (objPlayer.transform.position.y <= WinPosition) // altera para x depois 
+        if (objPlayer.transform.position.x >= WinPosition)  
         {
             WinGame();
         }
@@ -40,7 +40,6 @@ public class WinCondition : MonoBehaviour {
 
     private void WinGame()
     {
-        Time.timeScale = 0.0f;
         WinScript.UnlockNextLevel();
         WinScreen.enabled = true;
     }
