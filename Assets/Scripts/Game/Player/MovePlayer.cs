@@ -40,15 +40,18 @@ public class MovePlayer : MonoBehaviour {
         {
          
             movement = -1 * speed;
+            rotation = 1;
         }
         else if (InputDown.instance.Down == true)
         {
         
             movement = 1 * speed;
+            rotation = -1;
         }
         else
         {
             movement = 0;
+            rotation = 0;
         }
 
 
@@ -72,6 +75,7 @@ public class MovePlayer : MonoBehaviour {
             backWeel.motor = motor;
             frontWeel.motor = motor;
         }
+
         playerRB.AddTorque(-rotation * rotationSpeed * Time.fixedDeltaTime);
     }
 }

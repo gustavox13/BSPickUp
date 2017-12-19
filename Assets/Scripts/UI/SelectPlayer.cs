@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public sealed class SelectPlayer : MonoBehaviour {
+    [SerializeField]
+    private AudioSource soundSwipe;
 
     [SerializeField]
     private GameObject showCase;
@@ -50,6 +52,7 @@ public sealed class SelectPlayer : MonoBehaviour {
 
     private void SwipeLeft()
     {
+        soundSwipe.Play();
         verifySwipe = true;
         Move(90);
         PlayerSelected.instance.ConvertPlayerTypeToInt(showCase.transform.eulerAngles.y);
@@ -57,6 +60,7 @@ public sealed class SelectPlayer : MonoBehaviour {
 
     private void SwipeRight()
     {
+        soundSwipe.Play();
         verifySwipe = true;
         Move(-90);
         PlayerSelected.instance.ConvertPlayerTypeToInt(showCase.transform.eulerAngles.y);

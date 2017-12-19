@@ -20,6 +20,7 @@ public class WinCondition : MonoBehaviour {
 
     private void LoadResources()
     {
+        Debug.Log(Time.timeScale);
         objectTag = Constants.TagName.PLAYER;
         WinScreen.enabled = false;
         objPlayer = GameObject.FindWithTag(objectTag);
@@ -42,6 +43,7 @@ public class WinCondition : MonoBehaviour {
     {
         WinScript.UnlockNextLevel();
         WinScreen.enabled = true;
+        Time.timeScale = 0.0f;
     }
 
 }

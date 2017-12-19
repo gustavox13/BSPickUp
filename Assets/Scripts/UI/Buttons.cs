@@ -12,6 +12,14 @@ public class Buttons : MonoBehaviour {
     [SerializeField]
     private Animator animatorCredits;
 
+
+
+    private void Start()
+    {
+        Time.timeScale = 1.0f;
+    }
+
+
     //MENU
     public void PlayPress()
     {
@@ -39,12 +47,15 @@ public class Buttons : MonoBehaviour {
     }
     public void SelectPlayerPress()
     {
+       
         SceneManager.LoadScene(Constants.SceneName.SELECT_LVL);
+
     }
 
     //SELECT LVL
     public void BackSelectLvlPress()
     {
+   
         SceneManager.LoadScene(Constants.SceneName.MAIN_MENU);
     }
 
@@ -52,13 +63,16 @@ public class Buttons : MonoBehaviour {
     //GAME WIN
     public void ContinuePress()
     {
- 
+    
         SceneManager.LoadScene(Constants.SceneName.SELECT_LVL);
     }
     public void RestartPress()
     {
-     
+      
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+       
     }
+
+
 
 }

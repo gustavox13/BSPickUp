@@ -11,6 +11,7 @@ public class StarCount : MonoBehaviour {
     }
     private int numberStars;
 
+
     [SerializeField]
     private Canvas WinScreen;
 
@@ -37,6 +38,7 @@ public class StarCount : MonoBehaviour {
             for (int i = 0; i < numberStars; i++)
             {
                 stars[i].SetActive(true);
+             
             }
         }
     }

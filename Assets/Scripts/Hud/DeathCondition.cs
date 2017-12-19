@@ -38,6 +38,7 @@ public class DeathCondition : MonoBehaviour {
         if (deathPlayerScript.PlayerDied == true)
         {
             deathScreen.enabled = true;
+            Time.timeScale = 0.0f;
         }
     }
 
