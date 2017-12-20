@@ -13,6 +13,10 @@ public sealed class SelectPlayer : MonoBehaviour {
 
     private bool verifySwipe = false;
 
+    private void Start()
+    {
+        PlayerSelected.instance.ConvertPlayerTypeToInt(showCase.transform.eulerAngles.y);
+    }
 
 
     private void Update()

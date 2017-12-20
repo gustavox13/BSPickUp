@@ -24,7 +24,7 @@ public sealed class InputUp : MonoBehaviour {
         instance = this;
     }
 
-    private void OnMouseDrag()
+    private void OnMouseDown()
         {
             up = true;
             Debug.Log("frente pressionada");

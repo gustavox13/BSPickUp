@@ -19,8 +19,6 @@ public class MovePlayer : MonoBehaviour {
     private float movement = 0f;
     private float rotation = 0f;
 
-
-
     private void Update()
     {  
         InputController(); 
@@ -38,15 +36,15 @@ public class MovePlayer : MonoBehaviour {
        
         if ( InputUp.instance.Up == true)
         {
-         
+            
             movement = -1 * speed;
-            rotation = 1;
+            rotation = -1;
         }
         else if (InputDown.instance.Down == true)
         {
-        
+            
             movement = 1 * speed;
-            rotation = -1;
+            rotation = 1;
         }
         else
         {
@@ -76,6 +74,10 @@ public class MovePlayer : MonoBehaviour {
             frontWeel.motor = motor;
         }
 
+       
         playerRB.AddTorque(-rotation * rotationSpeed * Time.fixedDeltaTime);
+        
+
+ 
     }
 }

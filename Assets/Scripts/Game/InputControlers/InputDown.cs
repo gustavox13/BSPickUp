@@ -26,7 +26,7 @@ public class InputDown : MonoBehaviour {
 
 
 
-    private void OnMouseDrag()
+        private void OnMouseDown()
     {
         down = true;
         Debug.Log("ré pressionada");
@@ -35,6 +35,6 @@ public class InputDown : MonoBehaviour {
     private void OnMouseUp()
     {
         down = false;
-        Debug.Log("ré pressionada");
+        Debug.Log("ré desligada");
     }
 }
