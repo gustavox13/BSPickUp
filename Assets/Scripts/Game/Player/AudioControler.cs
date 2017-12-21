@@ -13,6 +13,37 @@ public class AudioControler : MonoBehaviour {
     [SerializeField]
     private AudioSource starSound;
 
+    public GameObject MoveFront
+    {
+        get { return moveFront; }
+        set { moveFront = value; }
+    }
+    [SerializeField]
+    private GameObject moveFront;
+
+    public GameObject MoveBack
+    {
+        get { return moveBack; }
+        set { moveBack = value; }
+    }
+    [SerializeField]
+    private GameObject moveBack;
+
+
+    private ButtonConstantInput componentFront;
+    private ButtonConstantInput componentBack;
+
+    private void Start()
+    {
+        LoadResources();
+    }
+
+    private void LoadResources()
+    {
+        componentFront = moveFront.GetComponent<ButtonConstantInput>();
+        componentBack = moveBack.GetComponent<ButtonConstantInput>();
+    }
+
 
 
     private void Update()
@@ -23,7 +54,7 @@ public class AudioControler : MonoBehaviour {
 
     private void MotorSound()
     {
-        if ((InputUp.instance.Up == true || InputDown.instance.Down == true) && som.pitch < MAX_PITCH)
+        if (Input.GetAxisRaw("Vertical") != 0 || componentFront.Input == 1 || componentBack.Input == 1 && som.pitch < MAX_PITCH)
         {
             som.pitch = som.pitch + acceleration;
         }
