@@ -54,7 +54,7 @@ public class AudioControler : MonoBehaviour {
 
     private void MotorSound()
     {
-        if (Input.GetAxisRaw("Vertical") != 0 || componentFront.Input == 1 || componentBack.Input == 1 && som.pitch < MAX_PITCH)
+        if ((Input.GetAxisRaw("Vertical") != 0 || componentFront.Input == 1 || componentBack.Input == 1) && som.pitch < MAX_PITCH)
         {
             som.pitch = som.pitch + acceleration;
         }
